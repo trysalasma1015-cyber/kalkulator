@@ -1,42 +1,52 @@
 body {
-  display: flex; justify-content: center; align-items: center;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
   min-height: 100vh; 
-  background: radial-gradient(circle at top, #2c2c54, #0f0f1e);
+  background: #fdf6ee; 
   font-family: 'Poppins', sans-serif;
+  margin: 0;
 }
 .calculator {
+  background: white; 
+  box-shadow: 0 10px 30px #eecdd1;
   border: none;
   border-radius: 24px; 
   padding: 20px;
-  background: rgba(255,255,255,0.08);
-  backdrop-filter: blur(20px);
-  width: 300px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+  width: 280px;
 }
 .display {
-  border: none; 
+  border: 2px solid #f8e9e9; 
   border-radius: 16px; 
-  padding: 20px;
+  padding: 18px;
   text-align: right; 
-  font-size: 38px; 
-  font-weight: 300;
-  margin-bottom: 18px; 
-  background: rgba(0,0,0,0.3);
-  color: white;
-  min-height: 40px;
+  font-size: 32px; 
+  margin-bottom: 16px; 
+  background: #fff8f8;
+  color: #5a3a3a;
+  min-height: 30px;
 }
-.buttons { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.buttons { 
+  display: grid; 
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 10px; 
+}
 .btn {
-  padding: 18px; font-size: 20px; border: none; 
-  border-radius: 14px; cursor: pointer; transition: 0.2s;
-  font-weight: 500;
+  padding: 18px; 
+  font-size: 18px; 
+  border: none; 
+  border-radius: 12px; 
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.15s;
 }
-.number { background: #2f2f3e; color: white; }
-.number:hover { background: #3f3f50; }
-.operator { background: #706fd3; color: white; }
-.operator:hover { background: #8c88ff; }
-.clear { background: #ff6b6b; color: white; }
-.delete { background: #feca57; color: #2f2f2f; }
-.equals { background: white; color: #2c2c54; font-weight: bold; }
-.zero { grid-column: span 2; }
 .btn:active { transform: scale(0.92); }
+
+.number { background: #f8e9e9; color: #5a3a3a; }
+.number:hover { background: #f3dcdc; }
+.operator { background: #d6a2ad; color: white; }
+.operator:hover { background: #c48e9a; }
+.clear { background: #ff8e9e; color: white; }
+.delete { background: #ffe0b5; color: #6d5a3a; }
+.equals { background: #9a86a4; color: white; }
+.zero { grid-column: span 2; }
